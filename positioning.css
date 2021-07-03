@@ -1,0 +1,347 @@
+
+ /*=========================================
+                 Common CSS
+   =========================================*/
+  
+   *{margin: 0; padding: 0;
+    text-decoration: none;
+    background:initial;
+    list-style: none;
+    }
+    
+
+   
+   /*=========================================
+                   Nav CSS
+      =========================================*/
+   
+      nav {
+        background: #f4511e8f;
+        position: relative;
+        width: 1348px;
+        margin: auto;
+        border-bottom: 2px solid #11114e;
+        min-height: 47px;
+        z-index: 1;
+        }
+           nav::after {
+            background: #ff000059;
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            bottom: 0;
+            left: 0;
+            content: "";
+            z-index: -1;
+            }
+   
+   .nav_img{float: left;
+            display: inline-block;
+            width: 46px;
+           } 
+   
+   .nav_img2{ float: left;
+             width: 115px;
+             display: inline-block;
+             margin-top: 4px;
+             margin-left: 3px;
+           } 
+   
+   
+   #my_name{
+           width: 91%;
+          }
+   #my_logo{
+            width: 88%;
+            margin-left: 5px;
+            margin-top: 0px;
+           } 
+   
+   
+   
+   /*=========================================
+                   Nav manu CSS
+      =========================================*/
+      .NavManu {
+            position: absolute;
+            left: 846px;
+            width: 489px;
+            float: right;
+            text-align: center;
+            font-family: cursive;
+          }
+    
+      /* -------primary_manu_css--------- */
+      .MainManu li , .MainManu a{
+        transition:.3s;
+      }
+      .MainManu li {
+        display:inline-block;
+        margin: 0 5px;
+        padding:13px 5px;
+        position: relative;
+      }
+      .MainManu li a{
+        color: #1d1d90;
+        font-weight: bold;
+      }
+      .MainManu li a:hover{
+        color: red;
+        
+      }
+      .MainManu li:hover a{
+        color: red;
+      }
+      .MainManu li:hover ul li a{
+        color:#fffefe;
+      }
+
+      .MainManu li:hover {
+        background: darkblue;
+      }
+
+     /* -------sub_manu_css--------- */
+     .MainManu ul {
+      position: absolute;
+      left: 0;
+      top: 49px;
+      width: 120px;
+      background: darkblue;
+      font-weight: normal;
+      font-size: 12px;
+      border: 1px solid #87b2ff;
+      box-shadow: 3px 3px 10px 1px #7f7f7f;
+      border-radius: 3px;
+      visibility: hidden;
+  }
+  
+  .MainManu li:hover ul{
+    visibility:visible;
+}
+.MainManu li:hover ul li ul {
+  visibility: hidden;
+ }
+ .MainManu li ul li:hover ul {
+  visibility:visible;
+ }
+.MainManu ul li ul {
+  left:120px;
+  top:0px;
+  margin:0;
+  margin-left: 0px;
+  visibility: hidden;
+  
+}
+
+
+
+
+     .MainManu ul li{
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    .MainManu li ul li:hover {
+      color:darkblue;
+      background: orangered;
+    }
+    .MainManu li ul li:hover a {
+      color:darkblue;
+      
+    }
+    .MainManu li ul li:hover ul li a {
+      color:#fffefe;
+      
+    }
+    .MainManu li ul li ul li:hover a  {
+      color:darkblue;
+      
+    }
+
+
+    
+
+
+    .MainManu ul li a{
+      color: #fffefe;
+    }
+
+
+    
+      
+   /*=========================================
+               CSS_of_log_in_box
+      =========================================*/
+   .loginbox {
+                border-radius: 20px;
+                animation-name:first_animation;
+                width: 207px;
+                animation-duration: 1s;
+                box-shadow: 4px 4px 11px -3px #000000;
+                background: #fffefe;
+                height: 287px;
+                display: inline-block;
+                margin-top: 30px;
+                margin-left: 62px;
+              }
+   
+          .head { cursor:default;
+                  width: 91%;
+                  margin-left: 6px;
+                  padding-top: 11px;
+                  margin-bottom: -4px;
+                  font-size: 28px;
+                  font-family: fantasy;
+                  color:orangered; 
+                  background: #ffffff00;;
+                  padding-left: 5px; border-radius: 20px;
+               }
+          
+          
+   
+          .info {
+                  font-size: 12px;
+                  margin-top: 12px;
+                  margin-left: 8px;
+                  padding-left: 4px;
+                  width: 88%;
+                  padding: 2px; 
+                  background: transparent;
+                  border: 2px dotted #1c1c7d;
+                  color:orangered;
+                }
+   
+      .info4 {
+               margin-top: 12px;
+               margin-left: 8px;
+               padding-left: 4px;
+               width: 88%;
+               background: transparent;
+               border: 2px dotted #1f1f5f;
+               color:orangered;
+             }  
+   
+   
+      .batton {
+                margin-top: 12px;
+                margin-left: 8px;
+                border-radius: 6px;
+                width: 92%;
+                margin-top: 32px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                color:orangered;
+                background: #1f1f5f;
+                border: #000000;
+                font-family: fantasy;
+                font-size: 15px;
+                cursor: pointer;
+             }   
+   
+   
+           .loginbox:hover{ transform:translateY(-50px); transition: all .5s;  }
+           .loginbox2:hover{ transform:translateY(-50px); transition: all .5s;  }    
+   
+   
+   .batton:hover{ background:orangered; 
+                  border:orangered ;
+                  color: #1c1c7d; 
+                  transition: all 1s ;
+                }
+   
+   
+   .head:hover{color: #1c1c7d;
+               transition: all .8s ;  
+              }  
+   
+   
+   .all_content{ width: 1150px;
+                 margin: auto;
+                 background:#c0cbff2e;
+                 border-radius: 20px;
+                 margin-top: 28px;
+                 height: 350px;
+               }
+   
+   
+   .title,.title2{
+                    font-family: arial black;
+                    font-size: 44px;
+                    margin-top: 51px;
+                    text-align: center;
+                  }
+   
+   .m{
+        color: #161679;
+        cursor:default;
+      }
+   
+   .f{  color: orangered;
+        cursor:default;
+   
+       }
+   
+   @keyframes first_animation{
+                               from{ transform: scale(.5);
+                                   }
+   
+                               to { transform: scale(1);
+                                   }
+   
+                              }
+   
+   .title2 .m{color: rgb(228, 53, 0);
+        cursor:default;
+   
+       }
+       
+       .title2 .f{
+                   color: #161679;
+                   cursor:default;
+                 }
+   
+       .loginbox2 {
+                    border-radius: 20px;
+                    animation-name: first_animation;
+                    width: 207px;
+                    animation-duration: 1s;
+                    box-shadow: 4px 4px 11px -3px #000000;
+                    background: #e8ecff69;
+                    height: 287px;
+                    display: inline-block;
+                    margin-top: 30px;
+                    margin-left: 62px;
+                    border-top: 1px solid #e4d9d9c4;
+                 }
+   
+        .all_content2{
+                        width: 1150px;
+                        margin: auto;
+                        background: #f9f9f9;
+                        border-radius: 20px;
+                        margin-top: 28px;
+                        height: 350px;
+                        margin-bottom:170px;
+                        padding: 36px 0px 0px 0px;
+                      }
+   
+   
+          
+   
+   /*=========================================
+                    Footer CSS
+      =========================================*/
+    .copyright{ width: 1348px;
+                background: #333;
+                color: white;
+                font-family: Arial;
+                text-align: center;
+                font-size: 15px;
+                padding:10px 0px ;
+                margin: auto;
+              } 
+   
+   
+ 
